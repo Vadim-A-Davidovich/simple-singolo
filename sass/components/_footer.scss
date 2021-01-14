@@ -1,0 +1,35 @@
+.footer {
+    background: $color-base-blue;
+    border-top: 6px solid $color-border-blue;
+    padding-bottom: 28px;
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .copyright {
+            line-height: 32px;
+            padding: 22px 0 0 40px;
+
+            p {
+                margin: 0;
+                color: $color-section-headers;
+                font-size: 1.3rem;
+                font-weight: 900;
+            }
+        }
+
+        .social {
+            display: flex;
+            padding: 22px 36px 0 0;
+        }
+        
+        .social__icon {
+            padding-right: 8px;
+
+        }
+    }
+}
+
+
+

@@ -1,0 +1,39 @@
+.slider__body {
+    position: relative;
+
+    img {
+        display: block;
+    }
+
+    &.second {
+        .slider__body_slide-2 {
+            overflow: hidden;
+            display: block;
+
+            &> img {
+                margin-top: -12px;
+            }
+        }
+
+        .slider__body_slide-1 {
+            display: none;
+        }
+    }
+
+    
+    .arrow-left {
+        position: absolute;
+        top: 283px;
+        left: 40px;
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 283px;
+        right: 40px;
+    }
+
+    .slider__body_slide-2 {
+        display: none;
+    }
+}

@@ -6,11 +6,12 @@
     <title>Simple-Singolo</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="sass/normalize.css">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="wrapper header__wrapper">
+        <div class="wrapper__content header__wrapper">
             <div class="header__logo">
                 <h1><a href="#" class="logo">SINGOLO<span class="logo-simbol">*</span></a></h1>
             </div>
@@ -44,7 +45,7 @@
     </section>
 
     <section class="services">
-        <div class="wrapper services__wrapper">
+        <div class="wrapper__content services__wrapper">
             <div class="services__content">
                 <h2>Our Services</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -109,58 +110,70 @@
     </section>
 
     <section class="portfolio">
-        <div class="wrapper portfolio__wrapper">
+        <div class="wrapper__content portfolio__wrapper">
             <h2>Portfolio</h2>
             <p class="portfolio__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="portfolio__tag">
-                <span class="tag tag_selected">All</span>
-                <span class="tag tag_bordered">Web Design</span>
-                <span class="tag tag_bordered">Graphic Design</span>
-                <span class="tag tag_bordered">Artwork</span>
+                <span data-sort='all' class="tag selected">All</span>
+                <span data-sort='web' class="tag">Web Design</span>
+                <span data-sort='graphic' class="tag">Graphic Design</span>
+                <span data-sort='artwork' class="tag">Artwork</span>
             </div>
-            <div class="layout-4-column">
-                <div class="potfolio__image">
+            <div class="layout-4-column" data-sort-sected="all">
+                <div data-sort="web" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-1.png" alt="portfolio-1">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="graphic" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-2.png" alt="portfolio-2">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="artwork" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-3.png" alt="portfolio-3">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="graphic" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-4.png" alt="portfolio-4">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="web" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-5.png" alt="portfolio-5">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="graphic" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-6.png" alt="portfolio-6">
                 </div>
-                <div class="potfolio__image">
+                <div  data-sort="artwork"class="potfolio__image">
                     <img src="./img/portfolio/portfolio-7.png" alt="portfolio-7">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="web" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-8.png" alt="portfolio-8">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="graphic" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-9.png" alt="portfolio-9">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="web" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-10.png" alt="portfolio-10">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="artwork" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-11.png" alt="portfolio-11">
                 </div>
-                <div class="potfolio__image">
+                <div data-sort="graphic" class="potfolio__image">
                     <img src="./img/portfolio/portfolio-12.png" alt="portfolio-12">
+                </div>
+                <div data-sort="web" class="potfolio__image">
+                    <img src="./img/portfolio/portfolio-10.png" alt="portfolio-13">
+                </div>
+                <div data-sort="artwork" class="potfolio__image">
+                    <img src="./img/portfolio/portfolio-11.png" alt="portfolio-14">
+                </div>
+                <div class="potfolio__image">
+                    <img src="./img/portfolio/portfolio-12.png" alt="portfolio-15">
+                </div>
+                <div class="potfolio__image">
+                    <img src="./img/portfolio/portfolio-12.png" alt="portfolio-16">
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="wrapper footer__wrapper">
+        <div class="wrapper__content footer__wrapper">
             <div class="copyright">
                 <p>© Copyright 2013</p>
             </div>
@@ -180,5 +193,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
