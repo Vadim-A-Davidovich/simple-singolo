@@ -9,7 +9,7 @@
 
         .copyright {
             line-height: 32px;
-            padding: 22px 0 0 40px;
+            padding-top: 22px;
 
             p {
                 margin: 0;
@@ -21,15 +21,38 @@
 
         .social {
             display: flex;
-            padding: 22px 36px 0 0;
+            padding-top: 22px;
         }
         
         .social__icon {
             padding-right: 8px;
-
         }
     }
 }
 
 
+@media (min-width: 0px) and (max-width: 767px) {
 
+    .footer {
+
+        border-top: 0;
+        padding: 20px;
+
+        .footer__wrapper {
+            .copyright {
+                display: none;
+            }
+
+            .social {
+                display: block;
+                text-align: center;
+                padding-top: 0;
+                width: 100%;
+
+                .social__icon {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

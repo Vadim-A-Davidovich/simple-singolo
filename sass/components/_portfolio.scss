@@ -75,10 +75,29 @@
             padding: 10px;
             order: 2;
 
-            &:nth-child(16) ~ * {
+            &:nth-child(12) ~ * {
                 display: none;
             }
         }
     }
-    
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .portfolio {
+        .portfolio__wrapper {
+            .layout-4-column {
+                margin: 0 -2%;
+
+                .potfolio__image {
+                    flex: 0 46%;
+                    margin: 2%;
+                    padding: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
 }

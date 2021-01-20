@@ -1,3 +1,7 @@
+.services {
+    background: $color-base-white;
+}
+
 .services__wrapper {
     overflow: hidden;
     color: $color-section-headers;
@@ -55,5 +59,32 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1019px) {
 
+    .services__wrapper {
+        padding: 0 40px 40px;
 
+        .layout-3-column {
+            .services__item {
+                flex: 0 47%;
+                margin-bottom: 3%;
+                position: relative;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    .services__wrapper {
+        padding: 0 30px 40px;
+
+        .layout-3-column {
+            .services__item {
+                flex: 0 98%;
+                margin-bottom: 3%;
+                position: relative;
+            }
+        }
+    }
+}

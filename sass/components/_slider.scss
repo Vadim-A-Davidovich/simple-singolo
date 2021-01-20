@@ -3,6 +3,7 @@
 
     img {
         display: block;
+        width: 100%;
     }
 
     &.second {
@@ -23,14 +24,16 @@
     
     .arrow-left {
         position: absolute;
-        top: 283px;
-        left: 40px;
+        top: 50%;
+        margin-top: -14px;
+        left: 4%;
     }
 
     .arrow-right {
         position: absolute;
-        top: 283px;
-        right: 40px;
+        top: 50%;
+        margin-top: -14px;
+        right: 4%;
     }
 
     .slider__body_slide-2 {
