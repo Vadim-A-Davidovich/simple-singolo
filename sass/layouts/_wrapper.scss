@@ -1,0 +1,24 @@
+.wrapper {
+    max-width: $content-width;
+    margin: auto;
+}
+
+.wrapper__content {
+    max-width: $content-width-short;
+    margin: auto;
+    padding: 0 40px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    .wrapper {
+        max-width: 100%;
+        margin: auto;
+
+    }
+
+    .wrapper__content {
+        padding: 0 30px;
+    }
+
+}

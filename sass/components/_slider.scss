@@ -1,0 +1,38 @@
+.slider__body {
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &.second {
+        .slider__body_slide-2 {
+            overflow: hidden;
+            display: block;
+        }
+
+        .slider__body_slide-1 {
+            display: none;
+        }
+    }
+
+    
+    .arrow-left {
+        position: absolute;
+        top: 50%;
+        margin-top: -14px;
+        left: 4%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 50%;
+        margin-top: -14px;
+        right: 4%;
+    }
+
+    .slider__body_slide-2 {
+        display: none;
+    }
+}

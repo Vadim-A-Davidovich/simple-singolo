@@ -1,0 +1,114 @@
+.portfolio {
+    background: $color-base-blue;
+    color: $color-section-headers;
+
+    .portfolio__wrapper {
+        overflow: hidden;
+        padding: 40px;
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .portfolio__description {
+            font-size: 1.8rem;
+        }
+
+        .layout-4-column {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -20px;
+            padding-bottom: 30px;
+
+            &[data-sort-selected="all"] > * {
+                order: 1;
+            }
+
+            &[data-sort-selected="web"] > [data-sort="web"] {
+                order: 1;
+            }
+
+            &[data-sort-selected="graphic"] > [data-sort="graphic"] {
+                order: 1;
+            }
+
+            &[data-sort-selected="artwork"] > [data-sort="artwork"] {
+                order: 1;
+            }
+        }
+
+        .portfolio__tag {
+            overflow: hidden;
+            margin-bottom: 7px;
+
+            .tag {
+                display: inline-block;
+                border: 1px solid $color-section-descriptions;
+                box-sizing: border-box;
+                border-radius: 5px;
+                line-height: 22px;
+                padding: 0 7px;
+                font-size: 1.2rem;
+                margin-left: 10px;
+
+                &.selected {
+                    border-color: #BBBBBB;
+                    color: #BBBBBB;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    border-color: #BBBBBB;
+                    color: #BBBBBB;
+                    cursor: pointer;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    
+        .portfolio__image {
+            display: flex;
+            padding: 10px;
+            order: 2;
+
+            &:nth-child(12) ~ * {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .portfolio {
+        .portfolio__wrapper {
+            padding: 0 30px;
+
+            .layout-4-column {
+                margin: 0 ;
+                padding-bottom: 22px;
+
+                .portfolio__image {
+                    flex: 0 48%;
+                    margin: 2%;
+                    padding: 0;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0;
+                    }
+
+                    &:nth-child(odd) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
