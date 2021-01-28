@@ -26,17 +26,19 @@
         
         .social__icon {
             padding-right: 8px;
+
+            &:last-child {
+                padding-right: 0px;
+            }
         }
     }
 }
 
 
 @media (min-width: 0px) and (max-width: 767px) {
-
     .footer {
-
         border-top: 0;
-        padding: 20px;
+        padding: 22px;
 
         .footer__wrapper {
             .copyright {

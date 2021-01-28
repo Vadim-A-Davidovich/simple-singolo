@@ -2,26 +2,31 @@
     background: $color-base-blue;
     border-bottom: 6px solid $color-border-blue;
     box-sizing: border-box;
-    height: 89px;
+    height: 95px;
 
     &> * a, li {
         text-decoration: none;
-        color: $color-border-white;
+        color: $color-white;
     }
 
     .header__wrapper {
-        max-width: $content-width;
+        max-width: $content-width-short;
         margin: auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
 
         .header__logo {
-            padding-left: 40px;
-            padding-top: 29px;
-        
-            &> h1 {
-                line-height: 25px;
-                margin: 0;
+            display: block;
+            
+            .logo {
+                display: block;
+
+                &> h1 {
+                    line-height: 25px;
+                    margin: 0;
+                } 
             }
 
             .logo-simbol {
@@ -31,8 +36,6 @@
 
 
         .header__navigation {
-            padding-right: 40px;
-            margin-top: 40px;
 
             .mobile-button {
                 display: none;
@@ -67,13 +70,17 @@
                         margin-top: -9px;
                         line-height: 0;
                     }
+                    
+                    .selected {
+                        color: $color-base-red;
+                    }
                 }
             }
         }
     }
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767px) {
     .header {
         height: 71px;
         border: 0;
@@ -81,9 +88,13 @@
         .header__wrapper {
             display: block;
             position: relative;
+            padding-top: 24px;
 
             .header__navigation {
-
+                position: absolute;
+                top: 0;
+                left: 0;
+                
                 .navigation {
                     display: none;
                 }
@@ -96,8 +107,8 @@
                     top: 23px;
                     left: 23px;
 
-                    i {
-                        background: $color-border-white;
+                    span {
+                        background: $color-white;
                         height: 2px;
                         width: 100%;
                         position: absolute;
@@ -112,7 +123,7 @@
                         left: 0;
                         top: 0;
                         height: 2px;
-                        background: $color-border-white;
+                        background: $color-white;
                         border-radius: 5px;
                     }
 
@@ -123,7 +134,7 @@
                         height: 2px;
                         right: 0;
                         bottom: 0px;
-                        background: $color-border-white;
+                        background: $color-white;
                         border-radius: 5px;
                     }
                 }
@@ -145,8 +156,8 @@
                     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
 
                     .mobile-button {
-                        i {
-                            background: $color-border-white;
+                        span {
+                            background: $color-white;
                             height: 25px;
                             width: 2px;
                             position: absolute;
@@ -162,7 +173,7 @@
                             height: 25px;
                             right: 0;
                             bottom: 0px;
-                            background: $color-border-white;
+                            background: $color-white;
                             border-radius: 5px;
                         }
                         
@@ -173,7 +184,7 @@
                             height: 25px;
                             top: 0;
                             left: 0;
-                            background: $color-border-white;
+                            background: $color-white;
                             border-radius: 5px;
                         }
                     }
@@ -210,7 +221,6 @@
                             &:after {
                                 display: none;
                             }
-
                         }
                     }
                 }
@@ -223,13 +233,18 @@
 
             .header__logo {
                 text-align: center;
-                padding: 24px 0 0 0;
                 position: relative;
                 z-index: 2;
                 font-size: 19px;
+                line-height: 24px;
+
+                .logo {
+                    &>h1 {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
             }
-
-
         }
     }
 }
